@@ -9,19 +9,19 @@
     </head>
     <body>
         <!--Start heading-->
-        <header class="header-content">
+        <header class="header-content" id="#home">
         
             <div class="container">
                 <nav>
                     
                     <h2 class="header-title"> <span id="P" class="header-title" >P</span>aulo <span class="invisible"> Henrique</span></h2>
                     <ul class="list">
-                        <li class="list-content"><a href="#">Home</a></li>
-                        <li class="list-content"><a href="#">About</a></li>
-                        <li class="list-content"><a href="#">Services</a></li>
-                        <li class="list-content"><a href="#">Portfolio</a></li>
-                        <li class="list-content"><a href="#">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                        <li class="list-content"><a href="#home">Home</a></li>
+                        <li class="list-content"><a href="#about">About</a></li>
+                        <li class="list-content"><a href="#services">Services</a></li>
+                        <li class="list-content"><a href="#portfolio">Portfolio</a></li>
+                        <li class="list-content"><a href="#contact">Contact</a></li>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                 </nav>
@@ -35,7 +35,7 @@
         </header>
         <!--End heading-->
         <!--Start about-->
-        <div class="about">
+        <div class="about" id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
@@ -92,7 +92,7 @@
         </div>
         <!--End about-->
         <!----services----->
-        <div class="services">
+        <div class="services" id="services">
             <div class="container">
                 <h2 class="sub-title"> My services </h2>
                 <div class="services-list">
@@ -125,7 +125,7 @@
         </div>
         <!----End services----->
         <!--Portfolio-->
-        <div class="porfolio">
+        <div class="portfolio" id="portfolio">
             <div class="container">
                 <h1 class="sub-title myWork">My portfolio</h1>
                 <div class="work-list">
@@ -159,7 +159,7 @@
         </div>
         <!--End Portfolio-->
         <!--Contact-->
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
@@ -189,5 +189,6 @@
         <script src="./js/aboutme.js">
         </script>
         <script src="./js/menu.js"></script>
+        <script src="./js/scrolling.js"></script>
     </body>
     </html>
