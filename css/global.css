@@ -416,7 +416,7 @@ nav .fa-solid{
 }
 /*-------------- resposivity  ----------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 500px) {
 
     .header-text {
         position: absolute;
@@ -499,34 +499,6 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-
-    .arrow-group{
-        
-    }
-    .arrow-group:hover{
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s 2s, opacity 2s linear;
-    }
-
-    .seta{
-        display: inline;
-        position: relative;
-        top: -180px;
-        display: block;
-        color: #fff;
-        text-align: center;
-        
-    }
-#seta{
-    display: flex;
-    position: relative;
-    top: -150px;
-    font-size: 64px;
-    justify-content: center;
-    align-items: center;
-    color: #ff004f;
-}
 
 }
 @media screen and ( min-width: 600px) and(max-width: 900px) {
