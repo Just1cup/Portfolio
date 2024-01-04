@@ -18,12 +18,24 @@ function closeMenu() {
     closeIcon.style.backgroung = 'transparent';
 }
 
+const externalLinks = {
+    weatherApp: "https://just1cup.github.io/WeatherApp/",
+    dateApp: "https://just1cup.github.io/DateApp/",
+    login: "just1cup.github.io/Login/"
+};
 
-function redirectToExternalLink() {
-    window.location.href = "https://just1cup.github.io/WeatherApp/";
-}
+document.getElementById("work1").addEventListener("click", function() {
+    window.location.href = externalLinks.weatherApp;
+});
 
-document.getElementById("work1").addEventListener("click", redirectToExternalLink);
+document.getElementById("work2").addEventListener("click", function() {
+    window.location.href = externalLinks.dateApp;
+});
+
+document.getElementById("work3").addEventListener("click", function() {
+    window.location.href = externalLinks.login;
+});
+
 
 
 // Event listener to open the menu
