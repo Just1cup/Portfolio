@@ -164,7 +164,8 @@ nav {
     transition: 0.5s;
 }
 
-.fa-solid .fas{
+.fa-solid, .fas {
+    font-weight: 900;
     color: red;
 }
 
