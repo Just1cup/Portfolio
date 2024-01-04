@@ -416,7 +416,7 @@ nav .fa-solid{
 }
 /*-------------- resposivity  ----------------*/
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .header-text {
         position: absolute;
