@@ -8,7 +8,13 @@ function openMenu() {
         sideMenu.style.background = 'transparent'
     }
     
-}
 function closeMenu() {
     sideMenu.style.right = "-250px";
+    
+    const isClosed = sideMenu.style.right = '-250px'
+    if (isClosed){
+        sideMenu.style.background = 'transparent'
+    }
+    
+
 }
