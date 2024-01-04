@@ -1,0 +1,197 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/global.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paulo Henrique - Curriculum</title>
+        <script src="https://kit.fontawesome.com/8bcc8d12f0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Start heading-->
+        <header class="header-content">
+        
+            <div class="container">
+                <nav>
+                    
+                    <h2 class="header-title"> <span id="P" class="header-title" >P</span>aulo <span class="invisible"> Henrique</span></h2>
+                    <ul class="list">
+                        <li class="list-content"><a href="#">Home</a></li>
+                        <li class="list-content"><a href="#">About</a></li>
+                        <li class="list-content"><a href="#">Services</a></li>
+                        <li class="list-content"><a href="#">Portfolio</a></li>
+                        <li class="list-content"><a href="#">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Front-End & Web-developer.</p>
+                    <h1 class="head-title">Hi, I'm <span class="first-name">Paulo</span> Henrique from Brasil,</h1>
+                    <h2>Also known as <span class="first-name">Tintas</span>.</h2>
+                </div>
+            </div>
+            
+        </header>
+        <div arrow-group>
+            <h3 class="seta">More information</h3>
+        <i id="seta" class="fa-solid fa-down-long"></i>
+    </div>
+        <!--End heading-->
+        <!--Start about-->
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./assets/1.JPG" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About me</h2>
+                        <p class="about-me-text">
+                            Hello, I'm Paulo Henrique, a 21-year-old with a passion for creating things. I really enjoy working with JavaScript, HTML, and CSS, sprinkled with a dash of C# expertise. I'm currently honing my skills in React and Angular, because who doesn't love a good challenge?
+                            In my spare time, I indulge in the art of crafting stories, masquerading as a hobbyist book writer. Why did the JavaScript developer go broke? Because he kept losing his scripts! But fear not, my coding endeavors are far more successful than my attempts at humor.
+                        </p>
+                        <p> If you're seeking a collaborator who can code with a side of wit and bring a refreshing approach to projects, let's connect. I'm open to discussions about job opportunities, interviews, or any tech-related endeavors that could use a touch of creativity and a good laugh. Let's turn the ordinary into extraordinary—because who said coding can't be both efficient and entertaining? Looking forward to our potential collaboration!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" data-tab="education" onclick="opentab('education')">Education</p>
+                        </div>
+                        <!--Start tab content-->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span class="skill-title"> Web Development </span> <br>
+                                    <p>Crafting captivating and functional web pages with a keen eye for design and user experience.</p>
+                                </li>
+                                <li>
+                                    <span class="skill-title"> Dynamic Scripting with JavaScript </span> <br>
+                                    <p>Mastering the art of problem-solving and optimizing web pages for efficiency and seamless user interactions.</p>
+                                </li>
+                                <li>
+                                    <span class="skill-title"> Back-End Development </span> <br>
+                                    <p>Architecting robust solutions to tackle any kind of problem, ensuring the seamless functioning of web applications.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!--End tab content-->
+                        <!--Start tab content-->
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span> Waiting for Experience </span></li>
+                            </ul>
+                        </div>
+                        <!--End tab content-->
+                        <!--Start tab content-->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span> Computer Science</span> - 2023 to 2028 </li>
+                            </ul>
+                        </div>
+                        <!--End tab content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End about-->
+        <!----services----->
+        <div class="services">
+            <div class="container">
+                <h2 class="sub-title"> My services </h2>
+                <div class="services-list">
+                    <!-- Start item list-->
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt nesciunt cum quam alias corrupti, temporibus obcaecati impedit nihil voluptatum facilis illum exercitationem aut ab ipsum nemo ex! Provident, sunt!</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <!-- End item list-->
+                    <!-- Start item list-->
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2> UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt nesciunt cum quam alias corrupti, temporibus obcaecati impedit nihil voluptatum facilis illum exercitationem aut ab ipsum nemo ex! Provident, sunt!</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <!-- End item list-->
+                    <!-- Start item list-->
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2> App Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deserunt nesciunt cum quam alias corrupti, temporibus obcaecati impedit nihil voluptatum facilis illum exercitationem aut ab ipsum nemo ex! Provident, sunt!</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <!-- End item list-->
+                </div>
+            </div>
+        </div>
+        <!----End services----->
+        <!--Portfolio-->
+        <div class="porfolio">
+            <div class="container">
+                <h1 class="sub-title myWork">My portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./assets/work 1.png" alt="">
+                        <div class="layer">
+                            <h3>Weather app!</h3>
+                            <p>The app tells you weather information in any city around the world, just by typying it's name.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./assets/work 2.png" alt="">
+                        <div class="layer">
+                            <h3>Under development!</h3>
+                            <p>Still unreleased.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./assets/work 2.png" alt="">
+                        <div class="layer">
+                            <h3>Under development!</h3>
+                            <p>Still unreleased.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!--End Portfolio-->
+        <!--Contact-->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h2 class="sub-title">Contact Me</h2>
+                        <p><i class="fa-regular fa-envelope"></i> paulohfreitas22@gmail.com</p>
+                        <p><i class="fa-solid fa-mobile-screen"></i> +55 31 99534-6402</p>
+                        <div class="social-icons">
+                            <a target="_blank" href="https://www.instagram.com/paulo_lyric/"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://github.com/Just1cup"> <i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/paulo-henrique-freitas-junior/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="./assets/Paulo Henrique - Cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Enter your name" required>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <textarea name="Message" cols="6" placeholder="Enter your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"> © copyright owner, Paulo Henrique. Without<span><i class=" fa-solid fa-mug-hot"></i></span>this project would be impossible. </div>
+        </div>
+
+        <script src="./js/aboutme.js">
+        </script>
+        <script src="./js/menu.js"></script>
+    </body>
+    </html>
