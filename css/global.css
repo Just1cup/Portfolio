@@ -452,7 +452,7 @@ nav .fa-solid{
     }
 
     nav ul {
-        background: #ff004f;
+        background: transparent;
         position: fixed;
         top: 0;
         right: -250px;
