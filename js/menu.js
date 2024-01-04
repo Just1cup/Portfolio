@@ -4,7 +4,7 @@ function openMenu() {
     sideMenu.style.transition ='0.5s'
     sideMenu.style.right = "0";
     sideMenu.style.background = '#ff004f'
-    if(device-innerWidth < '600px'){
+    if(device-innerWidth < '700px'){
         sideMenu.style.background = 'transparent'
     }
     
