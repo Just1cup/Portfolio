@@ -298,6 +298,12 @@ nav {
     transform: scale(1.1);
 }
 
+.work-list .work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .work:hover .layer{
 height: 100%;
 }
