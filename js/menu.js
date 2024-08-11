@@ -45,27 +45,15 @@ menuIcons[0].addEventListener('click', closeMenu); // Index 0 corresponds to the
 
 // Email to me 
 
-(function() {
-    emailjs.init("service_ehzvu0k");  
-  })();
+function sendEmail() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    const subject = `Contact from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
 
-    // Collect form data
-    const name = document.querySelector('input[name="name"]').value;
-    const email = document.querySelector('input[name="email"]').value;
-    const message = document.querySelector('textarea[name="message"]').value;
+    const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-    // Send email using EmailJS
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-        from_name: name,
-        from_email: email,
-        message: message,
-        to_email: 'your-email@example.com'  // This is your email where you'll receive the message
-    }).then(function(response) {
-       alert("Message sent successfully!");
-    }, function(error) {
-       alert("Failed to send the message. Please try again.");
-    });
-  });
+    window.location.href = mailtoLink;
+  }

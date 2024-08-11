@@ -174,11 +174,11 @@
                         <a href="./assets/Curriculo - Paulo Henrique.pdf" download class="btn btn2">Download CV</a>
                     </div>
 
-                    <form id="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-                        <input type="text" name="name" placeholder="Enter your name" required>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <textarea name="message" placeholder="Enter your message" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form id="contact-form">
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <textarea id="message" placeholder="Enter your message" required></textarea>
+                        <button type="button" onclick="sendEmail()">Submit</button>
                     </form>
 
                     </div>
