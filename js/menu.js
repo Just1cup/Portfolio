@@ -20,7 +20,7 @@ function closeMenu() {
 
 const externalLinks = {
     weatherApp: "https://just1cup.github.io/WeatherApp/",
-    dateApp: "https://just1cup.github.io/DateApp/",
+    dateApp: console.log('Under development, please try again next time!'),
     login: "just1cup.github.io/Login/"
 };
 
