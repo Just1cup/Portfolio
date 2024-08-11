@@ -37,9 +37,35 @@ document.getElementById("work3").addEventListener("click", function() {
 });
 
 
-
-// Event listener to open the menu
 menuIcons[1].addEventListener('click', openMenu); // Index 1 corresponds to the 'fa-bars' icon
 
 // Event listener to close the menu
 menuIcons[0].addEventListener('click', closeMenu); // Index 0 corresponds to the 'fa-xmark' icon
+
+
+// Email to me 
+
+(function() {
+    emailjs.init("service_ehzvu0k");  
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Collect form data
+    const name = document.querySelector('input[name="name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="message"]').value;
+
+    // Send email using EmailJS
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        from_name: name,
+        from_email: email,
+        message: message,
+        to_email: 'your-email@example.com'  // This is your email where you'll receive the message
+    }).then(function(response) {
+       alert("Message sent successfully!");
+    }, function(error) {
+       alert("Failed to send the message. Please try again.");
+    });
+  });
