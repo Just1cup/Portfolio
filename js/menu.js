@@ -43,17 +43,27 @@ menuIcons[1].addEventListener('click', openMenu); // Index 1 corresponds to the 
 menuIcons[0].addEventListener('click', closeMenu); // Index 0 corresponds to the 'fa-xmark' icon
 
 
-// Email to me 
-
 function sendEmail() {
+    console.log("Button clicked");  // 
+    
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
+    
+    console.log("Form values - Name:", name, "Email:", email, "Message:", message); 
+
+    if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+    }
 
     const subject = `Contact from ${name}`;
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
 
     const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+    console.log("Mailto link:", mailtoLink);  
+
+  
     window.location.href = mailtoLink;
-  }
+}
