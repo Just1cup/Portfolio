@@ -1,195 +1,203 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./css/global.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paulo Henrique - Curriculum</title>
-        <script src="https://kit.fontawesome.com/8bcc8d12f0.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!--Start heading-->
-        <header class="header-content" id="#home">
-        
-            <div class="container">
-                <nav>
-                    
-                    <h2 class="header-title"> <span id="P" class="header-title" >P</span>aulo <span class="invisible"> Henrique</span></h2>
-                    <ul class="list">
-                        <li class="list-content"><a href="#home">Home</a></li>
-                        <li class="list-content"><a href="#about">About</a></li>
-                        <li class="list-content"><a href="#services">Services</a></li>
-                        <li class="list-content"><a href="#portfolio">Portfolio</a></li>
-                        <li class="list-content"><a href="#contact">Contact</a></li>
-                        <i id="close" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>Front-End & Web-Developer.</p>
-                    <h1 class="head-title">Hi, I'm <span class="first-name">Paulo</span> Henrique from Brasil.</h1>
-                    <h2>A passionate <span class="first-name">Developer</span>!</h2>
-                </div>
-            </div>
-            
-        </header>
-        <!--End heading-->
-        <!--Start about-->
-        <div class="about" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="./assets/1.JPG" alt="">
-                    </div>
-                    <div class="about-col-2">
-                        <h2 class="sub-title">About me</h2>
-                        <p class="about-me-text">
-                            Hello, I'm Paulo Henrique, a 21-year-old with a passion for creating things. I really enjoy working with JavaScript, HTML, and CSS, sprinkled with a dash of C# expertise. I'm currently honing my skills in React and Angular, because who doesn't love a good challenge?
-                            In my spare time, I indulge in the art of crafting stories, masquerading as a hobbyist book writer. Why did the JavaScript developer go broke? Because he kept losing his scripts! But fear not, my coding endeavors are far more successful than my attempts at humor.
-                        </p>
-                        <p> If you're seeking a collaborator who can code with a side of wit and bring a refreshing approach to projects, let's connect. I'm open to discussions about job opportunities, interviews, or any tech-related endeavors that could use a touch of creativity and a good laugh. Let's turn the ordinary into extraordinary—because who said coding can't be both efficient and entertaining? Looking forward to our potential collaboration!</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" data-tab="education" onclick="opentab('education')">Education</p>
-                        </div>
-                        <!--Start tab content-->
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li>
-                                    <span class="skill-title"> Web Development </span> <br>
-                                    <p>Crafting captivating and functional web pages with a keen eye for design and user experience!</p>
-                                </li>
-                                <li>
-                                    <span class="skill-title"> Database engineering </span> <br>
-                                    <p>Capable of using your database to create the idea on your mind to the fullest of its potential!</p>
-                                </li>
-                                <li>
-                                    <span class="skill-title"> Back-End Development </span> <br>
-                                    <p>Architecting robust solutions to tackle any kind of problem, ensuring the seamless functioning of web applications!</p>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <!--End tab content-->
-                        <!--Start tab content-->
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li> <span> Waiting for Experience </span></li>
-                            </ul>
-                        </div>
-                        <!--End tab content-->
-                        <!--Start tab content-->
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li> <span> Computer Science</span> - 2023 to 2028 </li>
-                            </ul>
-                        </div>
-                        <!--End tab content-->
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Henrique - Currículo</title>
+    <script src="https://kit.fontawesome.com/8bcc8d12f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Início cabeçalho-->
+    <header class="header-content" id="#home">
+        <div class="container">
+            <nav>
+                <h2 class="header-title"><span id="P" class="header-title">P</span>aulo <span class="invisible">Henrique</span></h2>
+                <ul class="list">
+                    <li class="list-content"><a href="#home">Início</a></li>
+                    <li class="list-content"><a href="#about">Sobre</a></li>
+                    <li class="list-content"><a href="#services">Serviços</a></li>
+                    <li class="list-content"><a href="#portfolio">Portfólio</a></li>
+                    <li class="list-content"><a href="#contact">Contato</a></li>
+                    <i id="close" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Analista de Cibersegurança e Desenvolvedor Entusiasta.</p>
+                <h1 class="head-title">Olá, sou <span class="first-name">Paulo</span> Henrique do Brasil.</h1>
             </div>
         </div>
-        <!--End about-->
-        <!----services----->
-        <div class="services" id="services">
-            <div class="container">
-                <h2 class="sub-title"> My services </h2>
-                <div class="services-list">
-                    <!-- Start item list-->
-                    <div>
-                        <i class="fa-solid fa-code"></i>
-                        <h2> Web Design</h2>
-                        <p>Do you like a beutiful and well designed web-page? If so, I'm the perfect choice. Focused on delivering the best experience to the user!</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <!-- End item list-->
-                    <!-- Start item list-->
-                    <div>
-                        <i class="fa-solid fa-crop"></i>
-                        <h2> UI/UX Design</h2>
-                        <p>Always focused on creating a user-friendly design, so it will always be an engaging experience to use one of my products!</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <!-- End item list-->
-                    <!-- Start item list-->
-                    <div>
-                        <i class="fa-brands fa-app-store"></i>
-                        <h2> App Design</h2>
-                        <p>An app, should be pratical, but it should also bring joy to the user's eye. So, I do my utmost best to provide that sensation in each of my creations.</p>
-                        <a href="#">Learn more</a>
-                    </div>
-                    <!-- End item list-->
+    </header>
+    <!--Fim cabeçalho-->
+
+    <!--Sobre-->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/1.JPG" alt="">
                 </div>
-            </div>
-        </div>
-        <!----End services----->
-        <!--Portfolio-->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <h1 class="sub-title myWork">My portfolio</h1>
-                <div class="work-list">
-                    <div class="work" id="work1">
-                        <img src="./assets/work 1.png" alt="">
-                        <div class="layer">
-                            <h3>Weather app!</h3>
-                            <p>Embark on a journey with my Weather App, your passport to instant global weather insights! Unleash the power of knowledge at your fingertips – effortlessly discover weather details for any city worldwide with just a few keystrokes. Whether you're planning a getaway or simply staying informed, let our app be your meteorological companion, turning every location into an adventure. Seamlessly explore the world's weather, where the forecast meets convenience!</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" onclick=""></i></a>
-                        </div>
-                    </div>
-                    <div class="work" id="work2">
-                        <img src="./assets/datequest.png" alt="">
-                        <div class="layer">
-                            <h3>Comming soon</h3>
-                            <p>Currently under update."</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work" id="work3">
-                        <img src="./assets/login.png" alt="">
-                        <div class="layer">
-                            <h3>Login Screen!</h3>
-                            <p>Step into simplicity with our clean and intuitive login screen! Greeted by a tasteful background, you'll find a user-friendly interface that invites you to enter your credentials.</p>
-                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://github.com/Just1cup" class="btn">See more</a>
-            </div>
-        </div>
-        <!--End Portfolio-->
-        <!--Contact-->
-        <div class="contact" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h2 class="sub-title">Contact Me</h2>
-                        <p><i class="fa-regular fa-envelope"></i> paulohfreitas22@gmail.com</p>
-                        <p><i class="fa-solid fa-mobile-screen"></i> +55 31 99534-6402</p>
-                        <div class="social-icons">
-                            <a target="_blank" href="https://www.instagram.com/paulo_lyric/"><i class="fa-brands fa-instagram"></i></a>
-                            <a target="_blank" href="https://github.com/Just1cup"> <i class="fa-brands fa-github"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/paulo-henrique-freitas-junior/"><i class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                        <a href="./assets/Curriculo - Paulo Henrique.pdf" download class="btn btn2">Download CV</a>
+                <div class="about-col-2">
+                    <h2 class="sub-title">Sobre mim</h2>
+                    <p class="about-me-text">
+                        Olá, sou Paulo Henrique, tenho 23 anos. Atualmente, trabalho principalmente como <span class="redTExt">Analista de Cibersegurança</span>, estudando e me preparando para certificações como DCPT e Security+. Estou me preparando para atuar em Red Team no futuro, mas também gostaria de trabalhar com Threat Hunting, pois é um tema que considero fascinante.
+                    </p>
+                    <p>Meu conhecimento abrange <span class="redTExt">redes</span>, <span class="redTExt">programação</span>, <span class="redTExt">pentesting</span> e muito mais. Tento todos os dias aplicar minhas teorias em projetos práticos, como laboratórios e simulações. Recentemente, estou criando um SOC caseiro — já possuo máquinas apontando para um SIEM, um EDR e planejo implementar o OpenCTI também.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Habilidades</p>
+                        <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experiência</p>
+                        <p class="tab-links" data-tab="education" onclick="opentab('education')">Educação</p>
                     </div>
 
-                    <form id="contact-form">
-                        <input type="text" id="name" placeholder="Enter your name" required>
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                        <textarea id="message" placeholder="Enter your message" required></textarea>
-                        <button type="button" onclick="sendEmail()" class="btn btn2">Submit</button>
-                    </form>
+                    <!--Habilidades-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span class="skill-title">Teste de Penetração</span> <br>
+                                <p>
+                                    Experiência na identificação de vulnerabilidades, execução de simulações de intrusão e fortalecimento de defesas de sistemas por meio de metodologias estruturadas de pentest.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Desenvolvimento</span> <br>
+                                <p>
+                                    Habilidade em construir aplicações eficientes e escaláveis, aplicando práticas de codificação segura e transformando conceitos em soluções digitais funcionais.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="skill-title">Monitoramento de Ameaças</span> <br>
+                                <p>
+                                    Proficiente em monitoramento contínuo de segurança, análise de logs e alertas, e detecção de atividades suspeitas para garantir a proteção em tempo real de ambientes organizacionais.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <!--Experiência-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Analista de Cibersegurança - iTeam</span></li>
+                            <li>
+                                Como analista de cibersegurança, monitoro e investigo incidentes de segurança usando o SIEM QRadar, garantindo que as ameaças sejam identificadas de forma rápida e precisa.
+                                Utilizo fluxos de trabalho SOAR para automatizar respostas e otimizar o tratamento de incidentes.
+                                Meu foco é manter um ambiente de segurança resiliente por meio de detecção proativa e resposta coordenada.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Educação-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Ciência da Computação</span> - 2023 a 2028</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="copyright"> © copyright owner, Paulo Henrique. Without<span><i class=" fa-solid fa-mug-hot"></i></span>this project would be impossible. </div>
         </div>
+    </div>
 
-        <script src="./js/aboutme.js">
-        </script>
-        <script src="./js/menu.js"></script>
-        <script src="./js/scrolling.js"></script>
-    </body>
-    </html>
+    <!--Serviços-->
+    <div class="services" id="services">
+        <div class="container">
+            <h2 class="sub-title">Meus Serviços</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Gosta de uma página web bonita e bem projetada? Se sim, sou a escolha perfeita. A segurança sempre estará presente.</p>
+                    <a href="#contact">Saiba mais</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Teste de Penetração - Pentest</h2>
+                    <p>Realizo testes de penetração estruturados para descobrir vulnerabilidades em redes, aplicações e sistemas.
+                        Meu trabalho inclui simular vetores de ataque reais, validar controles de segurança e fornecer orientações claras de mitigação para fortalecer as defesas organizacionais.</p>
+                    <a href="#contact">Saiba mais</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Monitoramento de SOC</h2>
+                    <p>Especialista em monitoramento contínuo de segurança, utilizando QRadar SIEM e automação SOAR para detectar, classificar e responder a ameaças em tempo real.
+                        Meu foco é analisar padrões de eventos, investigar anomalias e garantir o rápido controle de incidentes, mantendo uma postura de segurança resiliente.</p>
+                    <a href="#contact">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfólio-->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title myWork">Aplicações que criei</h1>
+            <div class="work-list">
+                <div class="work" id="work1">
+                    <img src="assets/RpgGame.png" alt="">
+                    <div class="layer">
+                        <h3>Text-RPG!</h3>
+                        <p>Um jogo divertido (mas difícil) que eu desenvolvi!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work2">
+                    <img src="assets/Calendar.png" alt="">
+                    <div class="layer">
+                        <h3>Calendário de Trabalho</h3>
+                        <p>A escolha perfeita para acompanhar seus dias de trabalho, especialmente se você, assim como eu, não trabalha em horário comercial.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work" id="work3">
+                    <img src="assets/FireDice.png" alt="">
+                    <div class="layer">
+                        <h3>FireDice</h3>
+                        <p>Um bot para Discord criado especialmente para quem ama TTRPG, mas não quer rolar um dado físico.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Just1cup" class="btn">Ver mais</a>
+        </div>
+    </div>
+
+    <!--Contato-->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Fale comigo</h2>
+                    <p><i class="fa-regular fa-envelope"></i> paulohfreitas22@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i> +55 31 99534-6402</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.instagram.com/paulo_lyric/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://github.com/Just1cup"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/paulo-henrique-freitas-junior/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./assets/Curriculo - Paulo Henrique.pdf" download class="btn btn2">Baixar CV</a>
+                </div>
+
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Digite seu nome" required>
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+                    <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
+                    <button type="button" onclick="sendEmail()" class="btn btn2">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">© Todos os direitos reservados, Paulo Henrique. Sem <span><i class="fa-solid fa-mug-hot"></i></span> este projeto seria impossível.</div>
+
+    <script src="./js/aboutme.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/scrolling.js"></script>
+</body>
+</html>

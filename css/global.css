@@ -7,6 +7,8 @@
     color: rgb(253, 241, 223);
 }
 
+/* Google tradutor fixes*/
+
 body {
     background: #080808;
     position: relative;
@@ -83,6 +85,10 @@ nav {
 }
 
 #P {
+    color: #ff004f;
+}
+
+.redTExt {
     color: #ff004f;
 }
 
