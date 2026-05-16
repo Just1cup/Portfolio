@@ -1,203 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/global.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paulo Henrique - Currículo</title>
-    <script src="https://kit.fontawesome.com/8bcc8d12f0.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <!--Início cabeçalho-->
-    <header class="header-content" id="#home">
-        <div class="container">
-            <nav>
-                <h2 class="header-title"><span id="P" class="header-title">P</span>aulo <span class="invisible">Henrique</span></h2>
-                <ul class="list">
-                    <li class="list-content"><a href="#home">Início</a></li>
-                    <li class="list-content"><a href="#about">Sobre</a></li>
-                    <li class="list-content"><a href="#services">Serviços</a></li>
-                    <li class="list-content"><a href="#portfolio">Portfólio</a></li>
-                    <li class="list-content"><a href="#contact">Contato</a></li>
-                    <i id="close" class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-
-            <div class="header-text">
-                <p>Analista de Cibersegurança e Desenvolvedor Entusiasta.</p>
-                <h1 class="head-title">Olá, sou <span class="first-name">Paulo</span> Henrique do Brasil.</h1>
-            </div>
-        </div>
-    </header>
-    <!--Fim cabeçalho-->
-
-    <!--Sobre-->
-    <div class="about" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./assets/1.JPG" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h2 class="sub-title">Sobre mim</h2>
-                    <p class="about-me-text">
-                        Olá, sou Paulo Henrique, tenho 23 anos. Atualmente, trabalho principalmente como <span class="redTExt">Analista de Cibersegurança</span>, estudando e me preparando para certificações como DCPT e Security+. Estou me preparando para atuar em Red Team no futuro, mas também gostaria de trabalhar com Threat Hunting, pois é um tema que considero fascinante.
-                    </p>
-                    <p>Meu conhecimento abrange <span class="redTExt">redes</span>, <span class="redTExt">programação</span>, <span class="redTExt">pentesting</span> e muito mais. Tento todos os dias aplicar minhas teorias em projetos práticos, como laboratórios e simulações. Recentemente, estou criando um SOC caseiro — já possuo máquinas apontando para um SIEM, um EDR e planejo implementar o OpenCTI também.</p>
-
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')">Habilidades</p>
-                        <p class="tab-links" data-tab="experience" onclick="opentab('experience')">Experiência</p>
-                        <p class="tab-links" data-tab="education" onclick="opentab('education')">Educação</p>
-                    </div>
-
-                    <!--Habilidades-->
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>
-                                <span class="skill-title">Teste de Penetração</span> <br>
-                                <p>
-                                    Experiência na identificação de vulnerabilidades, execução de simulações de intrusão e fortalecimento de defesas de sistemas por meio de metodologias estruturadas de pentest.
-                                </p>
-                            </li>
-                            <li>
-                                <span class="skill-title">Desenvolvimento</span> <br>
-                                <p>
-                                    Habilidade em construir aplicações eficientes e escaláveis, aplicando práticas de codificação segura e transformando conceitos em soluções digitais funcionais.
-                                </p>
-                            </li>
-                            <li>
-                                <span class="skill-title">Monitoramento de Ameaças</span> <br>
-                                <p>
-                                    Proficiente em monitoramento contínuo de segurança, análise de logs e alertas, e detecção de atividades suspeitas para garantir a proteção em tempo real de ambientes organizacionais.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--Experiência-->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Analista de Cibersegurança - iTeam</span></li>
-                            <li>
-                                Como analista de cibersegurança, monitoro e investigo incidentes de segurança usando o SIEM QRadar, garantindo que as ameaças sejam identificadas de forma rápida e precisa.
-                                Utilizo fluxos de trabalho SOAR para automatizar respostas e otimizar o tratamento de incidentes.
-                                Meu foco é manter um ambiente de segurança resiliente por meio de detecção proativa e resposta coordenada.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!--Educação-->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Ciência da Computação</span> - 2023 a 2028</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Serviços-->
-    <div class="services" id="services">
-        <div class="container">
-            <h2 class="sub-title">Meus Serviços</h2>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Gosta de uma página web bonita e bem projetada? Se sim, sou a escolha perfeita. A segurança sempre estará presente.</p>
-                    <a href="#contact">Saiba mais</a>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Teste de Penetração - Pentest</h2>
-                    <p>Realizo testes de penetração estruturados para descobrir vulnerabilidades em redes, aplicações e sistemas.
-                        Meu trabalho inclui simular vetores de ataque reais, validar controles de segurança e fornecer orientações claras de mitigação para fortalecer as defesas organizacionais.</p>
-                    <a href="#contact">Saiba mais</a>
-                </div>
-
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Monitoramento de SOC</h2>
-                    <p>Especialista em monitoramento contínuo de segurança, utilizando QRadar SIEM e automação SOAR para detectar, classificar e responder a ameaças em tempo real.
-                        Meu foco é analisar padrões de eventos, investigar anomalias e garantir o rápido controle de incidentes, mantendo uma postura de segurança resiliente.</p>
-                    <a href="#contact">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--Portfólio-->
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <h1 class="sub-title myWork">Aplicações que criei</h1>
-            <div class="work-list">
-                <div class="work" id="work1">
-                    <img src="assets/RpgGame.png" alt="">
-                    <div class="layer">
-                        <h3>Text-RPG!</h3>
-                        <p>Um jogo divertido (mas difícil) que eu desenvolvi!</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work" id="work2">
-                    <img src="assets/Calendar.png" alt="">
-                    <div class="layer">
-                        <h3>Calendário de Trabalho</h3>
-                        <p>A escolha perfeita para acompanhar seus dias de trabalho, especialmente se você, assim como eu, não trabalha em horário comercial.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="work" id="work3">
-                    <img src="assets/FireDice.png" alt="">
-                    <div class="layer">
-                        <h3>FireDice</h3>
-                        <p>Um bot para Discord criado especialmente para quem ama TTRPG, mas não quer rolar um dado físico.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/Just1cup" class="btn">Ver mais</a>
-        </div>
-    </div>
-
-    <!--Contato-->
-    <div class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h2 class="sub-title">Fale comigo</h2>
-                    <p><i class="fa-regular fa-envelope"></i> paulohfreitas22@gmail.com</p>
-                    <p><i class="fa-solid fa-mobile-screen"></i> +55 31 99534-6402</p>
-                    <div class="social-icons">
-                        <a target="_blank" href="https://www.instagram.com/paulo_lyric/"><i class="fa-brands fa-instagram"></i></a>
-                        <a target="_blank" href="https://github.com/Just1cup"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/paulo-henrique-freitas-junior/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="./assets/Curriculo - Paulo Henrique.pdf" download class="btn btn2">Baixar CV</a>
-                </div>
-
-                <form id="contact-form">
-                    <input type="text" id="name" placeholder="Digite seu nome" required>
-                    <input type="email" id="email" placeholder="Digite seu email" required>
-                    <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
-                    <button type="button" onclick="sendEmail()" class="btn btn2">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="copyright">© Todos os direitos reservados, Paulo Henrique. Sem <span><i class="fa-solid fa-mug-hot"></i></span> este projeto seria impossível.</div>
-
-    <script src="./js/aboutme.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/scrolling.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Paulo Henrique, Cybersecurity Analyst focado em Detection Engineering, Threat Intelligence, SOC automation e desenvolvimento TypeScript."
+    />
+    <meta name="theme-color" content="#070a12" />
+    <meta property="og:title" content="Paulo Henrique | Cybersecurity & SOC Engineering" />
+    <meta
+      property="og:description"
+      content="Threat detection, CTI workflows, SOC automation and security-focused software engineering."
+    />
+    <meta property="og:type" content="website" />
+    <title>Paulo Henrique | Cybersecurity & SOC Engineering</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
