@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/Just1cup/Portfolio/issues"
   },
-  "homepage": "https://github.com/Just1cup/Portfolio#readme",
+  "homepage": "https://just1cup.github.io/Portfolio/",
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3"
