@@ -42,13 +42,13 @@ export const projects: readonly Project[] = [
     href: "https://github.com/Just1cup/socintel",
   },
   {
-    title: "FireDice",
-    eyebrow: "Discord Automation",
+    title: "VÊ AÍ!",
+    eyebrow: "Threat Intelligence Visualization",
     description:
-      "Discord bot created for tabletop RPG sessions, focused on fast dice interactions and a smoother remote game flow.",
+      "Web application that turns IOC data into an interactive investigation graph, combining a Rust API with a React visualization workspace.",
     impact:
-      "Turns a repetitive manual action into a lightweight command-driven experience.",
-    tags: ["Bot", "JavaScript", "Automation", "TTRPG"],
-    href: "https://github.com/Just1cup/Fire-Dice",
+      "Normalizes and deduplicates indicators, persists relationships in PostgreSQL and streams graph updates over WebSocket as source data changes.",
+    tags: ["Rust", "React", "Sigma.js", "PostgreSQL", "WebSocket", "Docker"],
+    href: "https://github.com/Just1cup/ve-ai",
   },
 ] as const;
