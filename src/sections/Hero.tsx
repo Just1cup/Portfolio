@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, Code2, Mail, Network, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Code2, Mail, Network } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { profile, stats } from "../content/profile";
 import { fadeUp, stagger } from "../lib/animation";
@@ -17,20 +17,17 @@ export function Hero() {
         animate="visible"
       >
         <motion.div className="hero__copy" variants={reduceMotion ? undefined : fadeUp}>
-          <span className="status-pill">
-            <ShieldCheck size={16} />
-            Detection Engineering / CTI / SOC Automation
-          </span>
           <h1>Paulo Henrique</h1>
+          <strong className="hero__role">Cybersecurity Analyst</strong>
           <p>{profile.headline}</p>
 
           <div className="hero__actions" aria-label="Primary actions">
             <Button href="#projects">
-              View Projects
+              View selected work
               <ArrowUpRight size={18} />
             </Button>
             <Button href={`mailto:${profile.email}`} variant="secondary">
-              Contact Me
+              Email Paulo
               <Mail size={18} />
             </Button>
           </div>
@@ -54,16 +51,17 @@ export function Hero() {
         <motion.aside
           className="intel-panel"
           variants={reduceMotion ? undefined : fadeUp}
-          aria-label="Mocked IOC analysis preview"
+          aria-label="Illustrative IOC analysis console"
         >
           <div className="intel-panel__header">
-            <span>Mocked IOC analysis</span>
-            <strong>203.0.113.42</strong>
+            <span>IOC analysis console</span>
+            <strong><i /> Live</strong>
           </div>
+          <p className="intel-command">› IOC_LOOKUP <b>203.0.113.42</b></p>
           <div className="signal-card signal-card--hot">
             <span>Analyst priority</span>
             <strong>87</strong>
-            <small>High priority after reputation, abuse history and URL context checks.</small>
+            <small>High priority after reputation, abuse history and context checks.</small>
           </div>
           <div className="intel-row">
             <span>Indicator type</span>
@@ -85,7 +83,7 @@ export function Hero() {
         </motion.aside>
       </motion.div>
 
-      <div className="hero__stats">
+      <div className="hero__stats" aria-label="Areas of focus">
         {stats.map((stat) => (
           <div className="stat-card" key={stat.value}>
             <strong>{stat.value}</strong>

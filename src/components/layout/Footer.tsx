@@ -3,7 +3,7 @@ import { profile } from "../../content/profile";
 export function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} {profile.name}. Built with React, TypeScript and a security-first mindset.</p>
+      <p>© {new Date().getFullYear()} {profile.name}. Secure by design.</p>
       <a href="#home">Back to top</a>
     </footer>
   );
