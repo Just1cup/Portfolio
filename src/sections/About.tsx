@@ -26,8 +26,8 @@ export function About() {
     <section className="section-shell about" id="about">
       <Reveal>
         <SectionHeading
-          eyebrow="About"
-          title="Security operations with an engineering mindset."
+          eyebrow="About / Expertise"
+          title="Turning signals into clarity and response."
           description={profile.summary}
         />
       </Reveal>

@@ -1,4 +1,5 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react";
+import socintelImage from "../assets/socintel-operations.png";
 import { Reveal } from "../components/ui/Reveal";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { projects } from "../content/projects";
@@ -19,7 +20,13 @@ export function Projects() {
 
       {featured ? (
         <Reveal className="featured-project">
-          <div>
+          <img
+            className="featured-project__image"
+            src={socintelImage}
+            alt="Dark security operations center with threat intelligence visualizations"
+            loading="lazy"
+          />
+          <div className="featured-project__copy">
             <span className="eyebrow">{featured.eyebrow}</span>
             <h3>{featured.title}</h3>
             <p>{featured.description}</p>
@@ -31,19 +38,10 @@ export function Projects() {
             </div>
             {featured.href ? (
               <a className="project-link" href={featured.href} target="_blank" rel="noreferrer">
-                View repository
+                View case study
                 <ExternalLink size={17} />
               </a>
             ) : null}
-          </div>
-          <div className="workflow-map" aria-hidden="true">
-            <span>IOC</span>
-            <i />
-            <span>Enrich</span>
-            <i />
-            <span>Score</span>
-            <i />
-            <span>Investigate</span>
           </div>
         </Reveal>
       ) : null}
